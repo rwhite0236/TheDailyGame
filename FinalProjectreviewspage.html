@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Website title-->
+<title>The Daily Game</title>
+<!--links this page to style.css -->
+<link rel="stylesheet" href="FinalProjectStyle.css" />
+</head>
+
+<body>
+<script src="FinalProjectJavaScript.js"></script>
+<!--head of the page-->
+<div class="pagehead">
+	<div class="heading">
+	<h1>The Daily Game</h1>
+	</div>
+	
+	<!--container for links in the page head-->
+	<div class="contain">
+		<!--link to news articles-->
+		<a title="News" href="FinalProjectnewspage.html">
+			<div class="headingbaritem">
+			NEWS
+			</div>
+		</a>
+		<!--link to reviews-->
+		<a title="Back to home page" href="FinalProjecthomepage.html">
+			<div class="headingbaritem">
+			HOME
+			</div>
+		</a>
+		<!--link to upcoming games-->
+		<a title="Upcoming" href="FinalProjectupcomingpage.html">
+			<div class="headingbaritem">
+			UPCOMING
+			</div>
+		</a>
+		<!--link to about page-->
+		<a title="About" href="FinalProjectaboutpage.html">
+			<div class="headingbaritem">
+			ABOUT
+			</div>
+		</a>
+	</div>
+</div>
+<p></p><br/>
+<p></p><br/>
+
+<!--holds the game review selection-->
+<div class="reviewcontainer">
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: PlayStation, https://store.playstation.com/en-us/product/UP0036-PPSA02181_00-GGSTPS5US0000100/-->
+		<img src="GuiltyGearStriveBoxArt.png" alt="Guilty Gear Strive">
+		</div>
+		<div class="reviewgametitle">
+		Guilty Gear -Strive-
+		</div>
+		<div class="reviewinfo">
+		Our score: 9/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings1">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore1()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value1"></span>
+		</div>
+	</div>
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: Wikipedia, https://en.wikipedia.org/wiki/Neo:_The_World_Ends_with_You-->
+		<img src="NTWEWYBoxArt.jpg" alt="Neo: The World Ends With You">
+		</div>
+		<div class="reviewgametitle">
+		Neo: The World Ends With You
+		</div>
+		<div class="reviewinfo">
+		Our score: 10/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings2">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore2()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value2"></span>
+		</div>
+	</div>
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: Devil May Cry 5, https://www.devilmaycry5.com/-->
+		<img src="DMC5.png" alt="Devil May Cry 5">
+		</div>
+		<div class="reviewgametitle">
+		Devil May Cry 5
+		</div>
+		<div class="reviewinfo">
+		Our score: 10/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings3">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore3()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value3"></span>
+		</div>
+	</div>
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: PlayStation, https://www.playstation.com/en-us/games/marvels-spider-man-miles-morales/-->
+		<img src="SpiderManMM.jpg" alt="Spider Man: Miles Morales">
+		</div>
+		<div class="reviewgametitle">
+		Spider Man: Miles Morales
+		</div>
+		<div class="reviewinfo">
+		Our score: 9/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings4">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore4()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value4"></span>
+		</div>
+	</div>
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: PlayStation, https://www.playstation.com/en-us/games/resident-evil-village/-->
+		<img src="REVIII.png" alt="Resident Evil: Village">
+		</div>
+		<div class="reviewgametitle">
+		Resident Evil: Village
+		</div>
+		<div class="reviewinfo">
+		Our score: 9/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings5">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore5()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value5"></span>
+		</div>
+	</div>
+	<!--reviewed game-->
+	<div class="reviewbox">
+		<div class="reviewicon">
+		<!--image source: PlayStation, https://store.playstation.com/en-us/product/UP0082-CUSA18900_00-KHMOM00000000000/-->
+		<img src="KHMoM.jpg" alt="Kingdom Hearts: Melody of Memory">
+		</div>
+		<div class="reviewgametitle">
+		Kingdom Hearts: Melody of Memory
+		</div>
+		<div class="reviewinfo">
+		Our score: 8/10
+		</div>
+		<div class="reviewinfo">
+		Rate this game!
+		<select id="ratings6">
+		<option value= "0">0</option>
+		<option value= "1">1</option>
+		<option value= "2">2</option>
+		<option value= "3">3</option>
+		<option value= "4">4</option>
+		<option value= "5">5</option>
+		<option value= "6">6</option>
+		<option value= "7">7</option>
+		<option value= "8">8</option>
+		<option value= "9">9</option>
+		<option value= "10">10</option>
+		</select>
+		<!--function call-->
+		<button onclick="userScore6()">Rate</button>
+		</div>
+		<div class="reviewinfo">
+		<span id="value6"></span>
+		</div>
+	</div>
+</div>
+	<!--footer-->
+<div class="footing">
+<footer>
+	<a href="FinalProjectreviewspage.html">Back to Top</a>
+	<p>Author: Raymond White<br>
+	<a href="mailto:rwhite0236@gmail.com">rwhite0236@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>

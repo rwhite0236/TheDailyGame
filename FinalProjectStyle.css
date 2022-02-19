@@ -1,0 +1,440 @@
+
+body{
+	color: black;
+	background-color: #00f5c9;
+}
+
+/*unvisited link*/
+a:link {
+	color: black;
+}
+/*visited link*/
+a:visited {
+	color: black;
+}
+/*mouse hovering over link*/
+a:hover {
+	color: #00f5c9;
+	
+}
+/*link being clicked*/
+a:active {
+	color: #3b00ff;
+}
+/*fonts for website text*/
+@font-face{
+	font-family: HeadingBarFont;
+	src:url("KungFuMasterBold-2OdpW.otf");
+}
+@font-face{
+	font-family: Article;
+	src:url("ModernMachine-WyyO9.ttf");
+}
+@font-face{
+	font-family: Description;
+	src:url("ZillahModern-11j.ttf");
+}
+
+
+/*heading of the page*/
+.pagehead{
+	background-color: #db4a00;
+	margin: auto;
+	width: 100%;
+	height:250px;
+	position: relative;
+}
+/*used for the title of the webpage*/
+.heading{
+	font-family: article;
+	margin: auto;
+	height: 60%;
+	text-align: center;
+	font-size: 50px;
+}
+/*container for the heading bar items*/
+.contain{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ff3600;
+	width: 100%;
+	height: 40%;
+	position: relative;
+	font-family: HeadingBarFont;
+	font-size: 400%;
+}
+/*links to different pages*/
+.headingbaritem{
+	margin: auto;
+	float: left;
+	width: 25%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*below the page heading*/
+.pagecontent{
+	font-family: article;
+	color: white;
+	background-color: black;
+	margin: auto;
+	border: 1px solid black;
+	width: 75%;
+	height: 700px;
+}
+/*page articles*/
+.article{
+	background-color: #941b00;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 95%;
+	height: 200px;
+}
+/*images in articles*/
+.articleicon{
+	margin-left: 0px;
+	margin-top: 0px;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+/*titles for articles*/
+.articletitle{
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	height: 25%;
+	width: 60%;
+	
+	font-size: 30px;
+}
+/*description of articles*/
+.articledesc{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-family: Description;
+	height: 50%;
+	width: 60%;
+	
+	font-size: 25px;
+	word-wrap: break-word;
+}
+/*holds the game reviews*/
+.reviewcontainer{
+	background-color: black;
+	color: white;
+	margin: auto;
+	font-family: article;
+	font-size: 24px;
+	width: 80%;
+	height: 1200px;
+}
+/*holds the game review info*/
+.reviewbox{
+	background-color: #941b00;
+	float: left;
+	margin-top: 40px;
+	margin-left: 4%;
+	margin-right: 3%;
+	width: 26%;
+	height: 525px;
+}
+/*game review image*/
+.reviewicon{
+	margin:auto;
+	width: 60%;
+	height: auto;
+	
+}
+/*title of game reviewed*/
+.reviewgametitle{
+	margin: auto;
+	margin-top: 5px;
+	text-align: center;
+	
+	width: 90%;
+	height: 80px;
+}
+/*review information of game*/
+.reviewinfo{
+	margin: auto;
+	margin-top: 5px;
+	font-size: 20px;
+	width: 90%;
+	height: 60px;
+}
+
+/*holds games to be released soon*/
+.upcomingcontainer{
+	background-color: black;
+	color: white;
+	font-family: article;
+	text-align: center;
+	font-size: 40px;
+	margin: auto;
+	margin-top: 5px;
+	width:80%;
+	height:1100px;
+}
+/*holds info of upcoming game*/
+.upcominggameinfocontainer{
+	background-color: #941b00;
+	border: 1px solid black;
+	text-align: left;
+	margin: auto;
+	margin-top: 35px;
+	width: 80%;
+	height: 250px;
+}
+/*holds game title*/
+.upcominggametitle{
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+	height: 20%;
+	width: 60%;
+	
+	font-size: 20px;
+}
+/*holds platforms of upcoming game*/
+.upcominggameplatform{
+	
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	
+	font-family: Description;
+	height: 40%;
+	width: 60%;
+	
+	font-size: 25px;
+	word-wrap: break-word;
+}
+/*holds the game icon*/
+.upcominggameiconcontainer{
+	margin-left: 0px;
+	margin-top: 0px;
+	float: left;
+	
+	width: 200px;
+	height: 200px;
+}
+/*holds paragraph of website description*/
+.paragraphbox{
+	font-family: article;
+	font-size: 25px;
+	margin: auto;
+	margin-top:20px;
+	width: 70%;
+	height: 200px;
+	word-wrap: break-word;
+}
+/*footer*/
+.footing{
+	color: black;
+	background-color: #ff3600;
+	font-family: article;
+	font-size: 25px;
+	margin: auto;
+	margin-top: 20px;
+	width: 85%;
+	height: 200px;
+	text-align: center;
+}
+/*controls image sizing*/
+img{
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+@media screen and (max-width: 1300px) {
+	.articletitle{
+		font-size: 22px;
+		width: 50%;
+	}
+	.articledesc{
+		font-size: 19px;
+		width: 50%;
+	}
+	.heading{
+		font-size: 40px;
+	}
+	.headingbaritem{
+		font-size: 50px;
+	}
+	.paragraphbox{
+		font-size: 20px;
+	}
+	.reviewcontainer{
+		height: 1000px;
+	}
+	.reviewbox{
+		font-size: 18px;
+		height: 425px;
+	}
+	.reviewinfo{
+		font-size: 16px;
+		height: 50px;
+	}
+	.upcominggametitle{
+		font-size: 17px;
+	}
+	.upcominggameplatform{
+		font-size:20px;
+	}
+	
+}
+@media screen and (max-width: 900px) {
+	.articletitle{
+		font-size: 20px;
+		width: 50%;
+	}
+	.articledesc{
+		font-size: 17px;
+		width: 50%;
+	}
+	.heading{
+		font-size: 35px;
+	}
+	.headingbaritem{
+		font-size: 45px;
+	}
+	.paragraphbox{
+		font-size: 17px;
+	}
+	.reviewcontainer{
+		height: 850px;
+	}
+	.reviewbox{
+		font-size: 16px;
+		height: 350px;
+	}
+	.reviewinfo{
+		font-size: 15px;
+		
+	}
+	.upcominggametitle{
+		width: 40%;
+	}
+	.upcominggameplatform{
+		width: 40%;
+	}
+}
+@media screen and (max-width: 900px) {
+	.articletitle{
+		font-size: 18px;
+		width: 40%;
+	}
+	.articledesc{
+		font-size: 15px;
+		width: 40%;
+	}
+	.heading{
+		font-size: 30px;
+	}
+	.headingbaritem{
+		font-size: 35px;
+	}
+	.paragraphbox{
+		font-size: 15px;
+	}
+	.reviewcontainer{
+		height: 1000px;
+		
+	}
+	.reviewbox{
+		font-size: 13px;
+		height: 450px;
+	}
+	.reviewinfo{
+		height: 70px;
+	}
+	.upcominggametitle{
+		width: 30%;
+		font-size: 13px;
+	}
+	.upcominggameplatform{
+		width: 30%;
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.pagecontent{
+		width: 90%;
+		height:1700px;
+	}
+	.article{
+		margin-top: 40px;
+		width: 65%;
+		height: 500px;
+	}
+	.articletitle{
+		
+		font-size: 18px;
+		width: 90%;
+		height: 80px;
+	}
+	.articledesc{
+		margin-top: 5px;
+		
+		font-size: 20px;
+		width: 90%;
+		height: 180px;
+	}
+	.articleicon{
+		
+		margin: auto;
+		width: 100%;
+		
+	}
+	
+	.footing{
+		width: 95%;
+		
+	}
+	
+	.headingbaritem{
+		font-size: 22px;
+	}
+	.reviewcontainer{
+		height: 1000px;
+	}
+	.reviewbox{
+		font-size: 13px;
+		height: 425px;
+	}
+	.reviewinfo{
+		margin-top: 25px;
+	}
+	.upcomingcontainer{
+		height: 2000px;
+		width: 100%;
+	}
+	
+	.upcominggameinfocontainer{
+		height: 500px;
+		width: 58%;
+	}
+	.upcominggametitle{
+		
+		margin-top: 10px;
+		width: 90%;
+		font-size: 20px;
+		height: 60px;
+	}
+	.upcominggameplatform{
+		
+		width: 90%;
+		height: 90px;
+		font-size: 20px;
+	}
+	.paragraphbox{
+		height: 300px;
+	}
+}
